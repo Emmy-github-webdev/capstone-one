@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+/* Reset*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  marging: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+p,
+a,
+li,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Basic style #e5e5e5*/
+body {
+  font-family: "Poppins";
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Fonts*/
+h1,
+h3 {
+  font-size: 1.2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+h4,
+h5 {
+  font-size: 1.1em;
+}
+
+.leading {
+  font-size: 1.1em;
+}
+
+/* Mobile styles*/
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.navigation-info {
+  background: yellow;
+}
+
+.navigation-content-info {
+  display: flex;
+  padding: 5px 20px 10px 62vw;
+}
+
+.navigation-content-info li {
+  padding-left: 17px;
+  
+}
+.navigation-bar {
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  height: 75px;
+}
+
+.logo a {
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.logo-icon {
+  height: 20px;
+}
+
+.menu {
+  padding: 20px 10px;
+}
+
+.menu-line {
+  width: 20px;
+  height: 3px;
+  background: #6070ff;
+  margin-bottom: 4px;
+  border: 1px solid #acb7c3;
+}
+
+/* section wrapper */
+.section-wrapper {
+  padding-top: 18vh;
+  border: 1px solid red;  
+}
+
+/* Welcome section */
+.welcome {
+  display: flex;
+  margin-top: 0;
+  background-color: green;
+}
+
+/* main program section */
+.program {
+  background-color: purple;
+}
+
+.program-content {
+  display: grid;
+}
+
+/* featured speaker section */
+.featured-speaker {
+  background-color: white;
+}
+
+/* footer section */
+.footer {
+  background-color: gray;
+}
+
+/* Small tablet*/
+@media screen and (min-width: 620px) {
+  .nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+  
+   .menu {
+    display: none;
+  }
+}
+
+/* Large tablet & Laptop*/
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+}
+
+/* Small tablet*/
+@media screen and (min-width: 1200px) {
+    body {
+    font-size: 20px;
+  }
+  
+  .nav-list .list-item {
+  display: inline-block;
+  padding: 20px 10px;
+}
+  
+   .menu {
+    display: none;
+  }
+}
