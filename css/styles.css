@@ -47,6 +47,11 @@ h5 {
 }
 
 /* Mobile styles*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -66,7 +71,7 @@ header {
   
 }
 .navigation-bar {
-  background: #fff;
+  background: #f9f9f9;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -85,42 +90,147 @@ header {
 
 .menu {
   padding: 20px 10px;
+  margin-left: -40vw;
 }
 
 .menu-line {
   width: 20px;
   height: 3px;
-  background: #6070ff;
+  background: #b5bfc9;
   margin-bottom: 4px;
-  border: 1px solid #acb7c3;
+  border: 1px solid #a6b2bf;
 }
 
 /* section wrapper */
 .section-wrapper {
-  padding-top: 18vh;
-  border: 1px solid red;  
+  padding-top: 10vh;  
 }
 
 /* Welcome section */
 .welcome {
   display: flex;
   margin-top: 0;
-  background-color: green;
+  background-image: url(../images/istockphoto.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+}
+
+.welcome-content {
+  margin: 3vh 3vw;
+}
+
+.welcome-content .greeting-paragraph {
+  color: #ff0000;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.welcome-content h1 {
+  color: #d5552a;
+  font-size: 32px;
+}
+
+.welcome-content .intro-paragraph {
+  border: 2px solid #fff;
+  font-weight: normal;
+  font-size: 15px;
+  padding: 3px;
+  
 }
 
 /* main program section */
 .program {
-  background-color: purple;
+  background: #000;
+  margin-bottom: 3vh;
+}
+
+.program h3 {
+  color: #fff;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.program h3:after {
+  content: "";
+  display: block;
+  margin-left: 40vw;
+  width: 15%;
+  padding-top: 20px;
+  border-bottom: 1px solid #ff0000;
 }
 
 .program-content {
   display: grid;
+  margin: 4vh 2vw;
+}
+
+.program-content-card {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 1.5fr;
+  gap: 2px;
+  align-items: center;
+  margin-bottom: 4vh;
+  height: 15vh;
+  background: #3c3f46;
+}
+
+.program-content-image img {
+ width: 60%;
+ height: 60%;
+ padding-left: 3vw;
+}
+
+.program-content-title h4 {
+  color: #ff0000;
+  font-size: 13px;
+  margin: 1.5px;
+}
+
+.program-content-info p {
+ font-size: 15px;
+ align-self: center;
+ color: #fff;
+}
+
+.see-more-program {
+  text-align: center;
+  background: #ff0000;
+  padding: 20px 10px;
+  margin: 0 18vw 18vw 18vw;
+}
+
+.see-more-program a {
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
 }
 
 /* featured speaker section */
 .featured-speaker {
-  background-color: white;
+  background: #fff;
 }
+
+.featured-speaker h3 {
+  text-align: center;
+  padding-top: 5vh;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.featured-speaker h3:after {
+  content: "";
+  display: block;
+  margin-left: 40vw;
+  width: 15%;
+  padding-top: 20px;
+  border-bottom: 2px solid #ff0000;
+}
+
+.featured-speaker-content {
+  
+}
+
 
 /* footer section */
 .footer {
