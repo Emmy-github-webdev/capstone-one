@@ -88,11 +88,6 @@ header {
   height: 20px;
 }
 
-.menu {
-  padding: 20px 10px;
-  margin-left: -40vw;
-}
-
 .menu-line {
   width: 20px;
   height: 3px;
@@ -103,7 +98,7 @@ header {
 
 /* section wrapper */
 .section-wrapper {
-  padding-top: 10vh;  
+  padding-top: 15vh;  
 }
 
 /* Welcome section */
@@ -113,7 +108,7 @@ header {
   background-image: url(../images/istockphoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
+  height: 90vh;
 }
 
 .welcome-content {
@@ -148,6 +143,7 @@ header {
   background-size: 12px 12px;
   background-repeat: repeat;
   width: 100%;
+  margin-top: -3vh;
   margin-bottom: 3vh;
 }
 
@@ -293,20 +289,190 @@ bottom: auto;
   padding-top: 1vh;  
 }
 
+.more-speakers {
+  border: 1px solid red;
+  margin: 5vh  3vw;
+}
+
+.more-speakers h4 {
+  text-align: center;
+  align-content: space-around;
+  margin-top: -3vh;
+}
+
+
 
 /* footer section */
 .footer {
-  background-color: gray;
+  background: #fff;
+}
+
+.footer-partner {
+  background: #414246;
+  height: 45vh;
+}
+
+.footer-partner h4 {
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 4vh;
+}
+
+.footer-partner h4:after {
+  content: "";
+  display: block;
+  margin-left: 43vw;
+  width: 13%;
+  padding-top: 15px;
+  border-bottom: 2px solid #ff0000;
+}
+
+.footer-partner-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: justify;
+  list-style-type: none;
+  margin: 30px;
+  justify-content: space-around;
+}
+
+.footer-partner-list li {
+  padding: 20px;
+}
+
+.footer-partner-list a {
+ color: #b7b7b5;
+ font-weight: bold;
+ font-size: 20px;
+}
+
+.footer-foot {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0.7fr 1fr;
+  margin: 30px;
+}
+
+.footer-foot-info h5 {
+  color: #b7b7b5;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer-logo img {
+  width: 60%;
+}
+
+.dropdown {
+  text-align: center;
+  border: 1px solid #b7b7b5;
+  margin: 15vh 4vw;
+  padding: 20px 10px;
+  color: #b7b7b5;
+  font-size: 18px;
+}
+
+.arrow {
+  border: solid #ff0000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 3vw;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@media all  and (max-width: 619px) {
+  
+  .navigation-info {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    padding: 20px 10px;
+    margin-left: -40vw;
+  }
+
+  .fsnav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+  }
+  
+  .fsnav-open {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+  .fsnav-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 50px;
+    width: 1.25em;
+    height: 1.24em;
+    outline: none;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    user-select: none;
+    cursor: pointer;
+    transition: background 0.1s;
+  }
+  
+  .fsnav-close:active,
+  .fsnav-close:hover,
+  .fsnav-link:active,
+  .fsnav-link:hover {
+    background: rgba(255,255,255,0.1);
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .fsnav-link {
+    line-height: 2;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    padding: 0 20px;
+    transition: background 0.1s;
+  }
 }
 
 /* Small tablet*/
 @media screen and (min-width: 620px) {
-  .nav-list .list-item {
+  .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
 }
   
    .menu {
+    display: none;
+  }
+
+  .fsnav-close {
     display: none;
   }
 }
@@ -320,8 +486,12 @@ bottom: auto;
   .menu {
     display: none;
   }
+
+  .fsnav-close {
+    display: none;
+  }
   
-  .nav-list .list-item {
+  .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
 }
@@ -333,12 +503,16 @@ bottom: auto;
     font-size: 20px;
   }
   
-  .nav-list .list-item {
+  .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
 }
   
-   .menu {
+  .menu {
+    display: none;
+  }
+
+  .fsnav-close {
     display: none;
   }
 }

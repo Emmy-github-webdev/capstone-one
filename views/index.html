@@ -9,9 +9,8 @@
   <title>Document</title>
 </head>
 <body>
-  
   <header>
-    <!-- <div class="navigation-info">
+    <div class="navigation-info">
       <ul class="navigation-content-info">
         <li><a href="#">f</a></li>
          <li><a href="#">T</a></li>
@@ -19,21 +18,22 @@
          <li><a href="#">My Page</a></li>
          <li><a href="#">Logout</a></li>
       </ul>
-    </div> -->
+    </div>
     <div class="navigation-bar">
-      <!-- <div class="logo">
+      <div class="logo">
         <a href="#">LOGO <img class="logo-icon"/></a>
-      </div> -->
+      </div>
       <nav>
-        <!-- <ul class="nav-list">
-          <li class="list-item" id="#about">About</li>
-          <li class="list-item" id="#program">Program</li>
-          <li class="list-item" id="#join">Join</li>
-          <li class="list-item" id="#sponsor">Sponsor</li>
-          <li class="list-item" id="#news">News</li>
-          <li class="list-item" id="#cc-campaign">CC campaign</li>
-        </ul> -->
-        <div class="menu">
+        <div class="fsnav">
+          <button type="button" class="fsnav-close">&times;</button>
+          <a href="#" class="fsnav-link" id="#about">About</a>
+          <a href="#" class="fsnav-link" id="#program">Program</a>
+          <a href="#" class="fsnav-link" id="#join">Join</a>
+          <a href="#" class="fsnav-link" id="#sponsor">Sponsor</a>
+          <a href="#" class="fsnav-link" id="#news">News</a>
+          <a href="#" class="fsnav-link" id="#cc-campaign">CC campaign</a>
+        </div>
+        <div class="menu" onclick="openNav()">
           <div class="menu-line"></div>
           <div class="menu-line"></div>
           <div class="menu-line"></div>
@@ -187,31 +187,32 @@
         </div>
       </div>
       
-    </section>
-    
+      <div class="dropdown">
+        More <i class="arrow down"></i>
+      </div>
+    </section>    
     <footer>
       <div class="footer-partner">
         <h4>Partner</h4>
         <ul class="footer-partner-list">
-          <li><a href="#"><img src="" alt="mozilla"></a></li>
-          <li><a href="#"><img src="" alt="google"></a></li>
-          <li><a href="#"><img src="" alt="naver"></a></li>
-          <li><a href="#"><img src="" alt="daumkakao"></a></li>
-          <li><a href="#"><img src="" alt="airbnb"></a></li>
+          <li><a href="#">Mozzilla</a></li>
+          <li><a href="#">Google</a></li>
+          <li><a href="#">Naver</a></li>
+          <li><a href="#">Daumkakao</a></li>
+          <li><a href="#">Airbnb</a></li>
         </ul>
       </div>
       <div class="footer-foot">
         <div class="footer-logo">
-          <img src="" alt="logo">
+          <img src="/images/kaduna-img.jpg" alt="logo">
         </div>
         <div class="footer-foot-info">
-          <h5>2015 Creative Commons Korea. Some Rights Reserved.</h5>
-          <p>&Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, laborum libero eligendi porro consequuntur cum quo corrupti sequi rerum sit modi amet, quas magnam aperiam assumenda similique ratione repellendus! Quae!</p>
+          <h5>2021 Kaduna State Security Summit. Some Rights Reserved.</h5>
         </div>
       </div>
     </footer>
 
   </div>
-  
+  <script src="/javaScript/scripts.js"></script>
 </body>
 </html>
