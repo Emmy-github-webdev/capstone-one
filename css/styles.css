@@ -141,7 +141,13 @@ header {
 
 /* main program section */
 .program {
-  background: #000;
+  background-color: #000000;
+  opacity: 1;
+  background-image:  linear-gradient(135deg, #0e0e10 25%, transparent 25%), linear-gradient(225deg, #0e0e10 25%, transparent 25%), linear-gradient(45deg, #0e0e10 25%, transparent 25%), linear-gradient(315deg, #0e0e10 25%, #000000 25%);
+  background-position:  12px 0, 12px 0, 0 0, 0 0;
+  background-size: 12px 12px;
+  background-repeat: repeat;
+  width: 100%;
   margin-bottom: 3vh;
 }
 
@@ -172,6 +178,7 @@ header {
   align-items: center;
   margin-bottom: 4vh;
   height: 15vh;
+  opacity: 0.6;
   background: #3c3f46;
 }
 
@@ -228,7 +235,62 @@ header {
 }
 
 .featured-speaker-content {
-  
+ background: #fff;
+ margin-top: 10vh;
+}
+
+.featured-speaker-card {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  gap: 10px;
+  padding: 3vh 1.5vw;
+  margin-bottom: 3vh;
+}
+
+.featured-speaker-image {
+background-color: #fff;
+opacity: 0.8;
+background-image:  repeating-linear-gradient(45deg, #000 25%, transparent 25%, transparent 75%, #000 75%, #000), repeating-linear-gradient(45deg, #000 25%, #fff 25%, #fff 75%, #000 75%, #000);
+background-position: 0 0, 10px 10px;
+background-size: 20px 20px;
+width: 50%;
+height: 50%;
+bottom: auto;
+}
+
+.featured-speaker-image img {
+  width: 125px;
+  height: 120px;
+  margin-top: 3vh;
+  padding-left: 3.5vw;
+}
+
+.featured-speaker-info h6 {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: left;
+  margin-top: 1vh;
+}
+
+.featured-speaker-title {
+  font-size: 14px;
+  align-items: flex-start;
+  margin-top: -3vh; 
+  color: #ff0000;
+}
+
+.featured-speaker-title:after {
+  content: "";
+  display: block;
+  width: 20%;
+  padding-top: 1vh;
+  border-bottom: 2px solid #e4e4e4;  
+}
+
+.featured-speaker-detail {
+  font-size: 14px;
+  align-items: flex-start;
+  padding-top: 1vh;  
 }
 
 
