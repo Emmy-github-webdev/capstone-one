@@ -1,10 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap');
+
 /* Reset*/
 * {
   box-sizing: border-box;
   padding: 0;
-  marging: 0;
+  margin: 0;
 }
 
 html {
@@ -58,7 +59,7 @@ header {
 }
 
 .navigation-info {
-  background: yellow;
+  background: #3E3E3E;
 }
 
 .navigation-content-info {
@@ -68,7 +69,12 @@ header {
 
 .navigation-content-info li {
   padding-left: 17px;
-  
+  list-style-type: none;  
+}
+
+.navigation-content-info li a {
+  text-decoration: none;
+  color: #fff;
 }
 .navigation-bar {
   background: #f9f9f9;
@@ -85,7 +91,9 @@ header {
 }
 
 .logo-icon {
-  height: 20px;
+  width: 28%;
+  border: none;
+  background: none;
 }
 
 .menu-line {
@@ -96,9 +104,17 @@ header {
   border: 1px solid #a6b2bf;
 }
 
+.fsnav-link {
+color: #344563;;
+}
+
+.fsnav a:nth-child(7) {
+  border: 2px solid #ff0000;
+  padding: 10px 5px;
+}
 /* section wrapper */
 .section-wrapper {
-  padding-top: 15vh;  
+  padding-top: 13vh;  
 }
 
 /* Welcome section */
@@ -108,30 +124,46 @@ header {
   background-image: url(../images/istockphoto.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100%;
 }
 
 .welcome-content {
-  margin: 3vh 3vw;
+  margin: 6vh 3vw 10vh;
 }
 
 .welcome-content .greeting-paragraph {
   color: #ff0000;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: normal;
+  margin-top: 7vh;
 }
 
 .welcome-content h1 {
   color: #d5552a;
   font-size: 32px;
+  margin-top: 7vh;
 }
 
 .welcome-content .intro-paragraph {
   border: 2px solid #fff;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 23px;
   padding: 3px;
-  
+  margin-top: 9vh;  
+}
+
+.welcome-venue {
+  margin-top: 15vh;
+}
+
+.welcome-venue h3 {
+  padding-bottom: 2vh;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.welcome-venue p {
+  font-size: 17px;
 }
 
 /* main program section */
@@ -143,6 +175,7 @@ header {
   background-size: 12px 12px;
   background-repeat: repeat;
   width: 100%;
+  height: auto;
   margin-top: -3vh;
   margin-bottom: 3vh;
 }
@@ -173,7 +206,7 @@ header {
   gap: 2px;
   align-items: center;
   margin-bottom: 4vh;
-  height: 15vh;
+  height: auto;
   opacity: 0.6;
   background: #3c3f46;
 }
@@ -195,23 +228,27 @@ header {
  align-self: center;
  color: #fff;
 }
+.see-more-program {
+  margin-bottom: 60vh;
+}
 
 .see-more-program {
   text-align: center;
   background: #ff0000;
   padding: 20px 10px;
-  margin: 0 18vw 18vw 18vw;
+  margin: 0 20vw 18vh 20vw;
 }
 
 .see-more-program a {
   color: #fff;
-  font-weight: normal;
   font-size: 16px;
+  font-weight: normal;
 }
 
 /* featured speaker section */
 .featured-speaker {
   background: #fff;
+  margin-bottom: 15vh;
 }
 
 .featured-speaker h3 {
@@ -224,8 +261,8 @@ header {
 .featured-speaker h3:after {
   content: "";
   display: block;
-  margin-left: 40vw;
-  width: 15%;
+  margin-left: 43%;
+  width: 10%;
   padding-top: 20px;
   border-bottom: 2px solid #ff0000;
 }
@@ -265,13 +302,13 @@ bottom: auto;
   font-size: 15px;
   font-weight: bold;
   text-align: left;
-  margin-top: 1vh;
+  margin-top: 0.5vh;
 }
 
 .featured-speaker-title {
   font-size: 14px;
   align-items: flex-start;
-  margin-top: -3vh; 
+  margin-top: 0; 
   color: #ff0000;
 }
 
@@ -300,7 +337,130 @@ bottom: auto;
   margin-top: -3vh;
 }
 
+/* About welcome page */
+.welcome-content .greeting-paragraph-about {
+  color: #ff0000;
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 3vh;
+}
 
+.welcome-content h2 {
+  color: #d5552a;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.welcome-content .intro-paragraph-about {
+  background-color: #fff;
+  font-weight: normal;
+  height: auto;
+  text-align: justify;
+  font-size: 10px;
+  padding: 8% 5%;
+  margin-top: 15vh;
+  
+}
+
+.welcome-content-contact{
+  margin: 6vh 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* about program section */
+.program-about {
+  background: #fff;
+  margin-top: -3vh;
+  margin-bottom: 3vh;
+}
+
+.program-about h5 {
+  margin: 20vh 15vw 4vh 15vw;
+  text-align: center;
+}
+
+.program-about h5:after {
+  content: "";
+  display: block;
+  margin-left: 30vw;
+  width: 15%;
+  padding-top: 20px;
+  border-bottom: 2px solid #ff0000;
+}
+
+.program-about p {
+  text-align: center;
+  margin: 2vh 10vw;
+  color: #3c3c3c;
+}
+
+.program-about-logo {
+  margin: 5vh 5vw;
+  align-items: center;
+  border: 1px solid #302f2f;
+}
+
+.program-about-logo img {
+  align-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.program-about-logo p {
+  font-size: 14px;
+  font-weight: normal;
+  color: #302f2f;
+}
+
+.program-about-logo p:before,
+.program-about-logo p:after {
+  content: "";
+  display: block;
+  margin: 0 2vw;
+  border-bottom: 2px solid #cacaca;
+}
+
+/* past summit section */
+.featured-speaker-about {
+  background: #fff;
+}
+
+.featured-speaker-about h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 15vh 6vw 3vh;
+}
+
+.featured-speaker-about h3:after {
+  content: "";
+  display: block;
+  margin-left: 38vw;
+  width: 15%;
+  padding-top: 20px;
+  border-bottom: 2px solid #ff0000;
+}
+
+.featured-speaker-about p {
+  margin: 3vh 5vw;
+  text-align: center;
+}
+
+.past-summit-images {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 25px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* footer section */
 .footer {
@@ -463,16 +623,116 @@ bottom: auto;
 
 /* Small tablet*/
 @media screen and (min-width: 620px) {
+
+  .navigation-content-info {
+    padding: 5px 20px 10px 50vw;
+  }
+
   .fsnav .fsnav-link {
   display: inline-block;
-  padding: 20px 10px;
-}
+  padding: 20px 5px;
+  font-size: 18px;
+  }
+
+  .fsnav a:nth-child(7){
+    display: none;
+  }
   
    .menu {
     display: none;
   }
 
   .fsnav-close {
+    display: none;
+  }
+
+  .welcome-content {
+    margin: 20vh 15vw 15vh;
+  }
+
+  .greeting-paragraph {
+    font-size: 21px;
+  }
+
+  .welcome-content h1 {
+    font-size: 50px;
+    background-image: linear-gradient(to right, #f21500,#ac0102,#7f110E,#e95119,#fc560e,#F46749);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .welcome-content .intro-paragraph {
+    font-size: 13px;
+    margin-right: 15vw;
+  }
+
+  .program-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+  }
+
+  .program-content-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program-content-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program-content-image img {
+    width: 80%;
+    padding-top: 1.5vh;
+  }
+
+  .program-content-title h4 {
+    font-size: 18px;
+    margin-top: -4vh;
+    text-align: center;
+  }
+
+  .program-content-info p {
+    font-size: 12px;
+    padding: 2.5px;
+    align-items: center;
+  }
+
+  .see-more-program {
+    text-align: center;
+    background: black;
+    padding: 20px 10px;
+    margin: 9vh 30vw 18vh 30vw;
+    opacity: 0.2;
+  }
+
+  .see-more-program a {
+    border-bottom: 1px solid #fff;
+  }
+
+  .featured-speaker-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .featured-speaker-image {
+    background-image:  repeating-linear-gradient(45deg, #cacaca 25%, transparent 25%, transparent 75%, #cacaca 75%, #cacaca), repeating-linear-gradient(45deg, #cacaca 25%, #fff 25%, #fff 75%, #cacaca 75%, #cacaca);
+    background-position: 0 0, 10px 10px;
+    background-size: 20px 20px;
+    width: 50%;
+    height: 50%;
+    bottom: auto;
+  }
+
+  .featured-speaker-image img {
+    width: 170px;
+    height: 140px;
+    margin-top: 3vh;
+    padding-left: 1.5vw;
+  }
+
+  .dropdown {
     display: none;
   }
 }
@@ -494,10 +754,31 @@ bottom: auto;
   .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
-}
+  }
+
+  .navigation-content-info {
+    padding: 5px 20px 10px 57vw;
+  }
+
+  .fsnav a:nth-child(7){
+    display: inline-block;
+    color: #ff0000;
+  }
+
+  .welcome-content h1 {
+    margin-right: 30%;
+    font-size: 55px;
+  }
+
+  .featured-speaker-image img {
+    width: 170px;
+    height: 140px;
+    margin-top: 3vh;
+    padding-left: 1.5vw;
+  }
 }
 
-/* Small tablet*/
+/* large screen*/
 @media screen and (min-width: 1200px) {
     body {
     font-size: 20px;
@@ -506,6 +787,7 @@ bottom: auto;
   .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
+  font-size: 30px;
 }
   
   .menu {
@@ -514,5 +796,51 @@ bottom: auto;
 
   .fsnav-close {
     display: none;
+  }
+  .navigation-content-info {
+    padding: 5px 20px 10px 65vw;
+  }
+
+  .featured-speaker-image img {
+    width: 200px;
+    height: 180px;
+  }
+
+  .welcome-content h1 {
+    font-size: 65px;
+  }
+
+  .welcome-content .intro-paragraph {
+    font-size: 18px;
+    margin-right: 30vw;
+  }
+
+  .welcome-venue h3 {
+    font-size: 35px;
+  }
+
+  .welcome-venue p {
+    font-size: 20px;
+  }
+
+  .program-content-title h4 {
+    font-size: 20px;
+  }
+
+  .program-content-info p {
+    font-size: 26px;
+  }
+
+  
+  .footer-partner h4 {
+    font-size: 30px;
+  }
+
+  .footer-partner-list a {
+    font-size: 26px;
+  }
+
+  .footer-foot-info h5 {
+    font-size: 17px;
   }
 }
