@@ -109,8 +109,8 @@ color: #344563;;
 }
 
 .fsnav a:nth-child(7) {
-  border: 2px solid #ff0000;
-  padding: 10px 5px;
+  border: 0.5px solid #ff0000;
+  padding: 6px 4px;
 }
 /* section wrapper */
 .section-wrapper {
@@ -139,7 +139,9 @@ color: #344563;;
 }
 
 .welcome-content h1 {
-  color: #d5552a;
+  background-image: linear-gradient(to right, #f21500,#ac0102,#7f110E,#e95119,#fc560e,#F46749);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 32px;
   margin-top: 7vh;
 }
@@ -147,7 +149,7 @@ color: #344563;;
 .welcome-content .intro-paragraph {
   border: 2px solid #fff;
   font-weight: normal;
-  font-size: 23px;
+  font-size: 11px;
   padding: 3px;
   margin-top: 9vh;  
 }
@@ -405,7 +407,8 @@ bottom: auto;
 
 .program-about-logo img {
   align-content: center;
-  width: 100%;
+  width: 60%;
+  margin-left: 20vw;
   height: auto;
 }
 
@@ -457,9 +460,15 @@ bottom: auto;
 
 .centered {
   position: absolute;
+  padding: 30% 10%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; 
+  height: 100%;
 }
 
 /* footer section */
@@ -469,7 +478,7 @@ bottom: auto;
 
 .footer-partner {
   background: #414246;
-  height: 45vh;
+  height: auto;
 }
 
 .footer-partner h4 {
@@ -499,7 +508,11 @@ bottom: auto;
 }
 
 .footer-partner-list li {
-  padding: 20px;
+  padding: 6px;
+}
+
+.footer-partner-list img {
+  width: 70%;
 }
 
 .footer-partner-list a {
@@ -522,7 +535,7 @@ bottom: auto;
 }
 
 .footer-logo img {
-  width: 60%;
+  width: 45%;
 }
 
 .dropdown {
@@ -662,7 +675,7 @@ bottom: auto;
   }
 
   .welcome-content .intro-paragraph {
-    font-size: 13px;
+    font-size: 11px;
     margin-right: 15vw;
   }
 
@@ -688,15 +701,15 @@ bottom: auto;
   }
 
   .program-content-title h4 {
-    font-size: 18px;
+    font-size: 13px;
     margin-top: -4vh;
     text-align: center;
   }
 
   .program-content-info p {
-    font-size: 12px;
+    font-size: 10px;
     padding: 2.5px;
-    align-items: center;
+    text-align: center;
   }
 
   .see-more-program {
@@ -709,6 +722,7 @@ bottom: auto;
 
   .see-more-program a {
     border-bottom: 1px solid #fff;
+    font-size: 20px;
   }
 
   .featured-speaker-content {
@@ -734,6 +748,38 @@ bottom: auto;
 
   .dropdown {
     display: none;
+  }
+
+  /* About page */
+
+  .welcome-content h2 {
+    font-size: 40px;
+  }
+
+  .welcome-content .intro-paragraph-about {
+    font-size: 12px;
+  }
+
+  .program-about h5 {
+  font-size: 22px;
+  }
+
+  .program-about-logo img {
+    width: 40%;
+    margin-left: 30%;
+  }
+
+  .program-about-logo p:before,
+  .program-about-logo p:after {
+    content: "";
+    display: block;
+    margin: 0 17vw;
+    border-bottom: 2px solid #cacaca;
+  }
+
+  .pass-summit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -787,7 +833,7 @@ bottom: auto;
   .fsnav .fsnav-link {
   display: inline-block;
   padding: 20px 10px;
-  font-size: 30px;
+  font-size: 20px;
 }
   
   .menu {
@@ -828,7 +874,7 @@ bottom: auto;
   }
 
   .program-content-info p {
-    font-size: 26px;
+    font-size: 20px;
   }
 
   
@@ -836,11 +882,80 @@ bottom: auto;
     font-size: 30px;
   }
 
-  .footer-partner-list a {
-    font-size: 26px;
+  .footer-partner-list li img {
+    width: 50%;
+    margin: 0 3vw;
   }
 
   .footer-foot-info h5 {
     font-size: 17px;
+  }
+
+  /* About page */
+
+  .welcome-content h2 {
+    font-size: 65px;
+  }
+
+  .welcome-content .greeting-paragraph-about {
+    font-size: 26px;
+  }
+
+  .welcome-content .intro-paragraph-about {
+    font-size: 13px;
+  }
+
+  .welcome-content-contact p{
+    font-size: 23px;
+  }
+
+  .welcome-content-contact h4{
+   font-size: 30px;
+  }
+
+  .program-about h5 {
+    margin: 20vh 20vw 4vh 20vw;
+    font-size: 35px;
+  }
+
+  .program-about p {
+    font-size: 20px;
+  }
+
+  .program-about-logo {
+    margin: 5vh 13vw;
+  }
+
+  .program-about-logo p:before,
+  .program-about-logo p:after {
+    margin: 0 23vw;
+  }
+
+  .featured-speaker h3 {
+    font-size: 32px;
+  }
+
+  .featured-speaker-info h6 {
+    font-size: 23px;
+  }
+
+  .featured-speaker-title {
+    font-size: 19px;
+  }
+
+  .featured-speaker-detail {
+    font-size: 19px;  
+  }
+
+  .featured-speaker-about h3 {
+    font-size: 35px;
+  }
+
+  .footer-foot-info h5 {
+    font-size: 24px;
+  }
+
+  .footer-logo {
+    width: 50%;
   }
 }
