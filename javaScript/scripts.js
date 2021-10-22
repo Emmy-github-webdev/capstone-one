@@ -12,7 +12,7 @@ function openNav() {
   fsNav.className = 'fsnav fsnav-open';
 }
 
-/* create featured speaker dynamically*/
+/* create featured speaker dynamically */
 const featuredSpeakersDiv = document.querySelector('.featured-speaker-content');
 
 const featuredSpeakers = [
