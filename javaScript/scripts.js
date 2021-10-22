@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const fsNavCloseBtn = document.querySelector('.fsnav-close');
 
-  fsNavCloseBtn.addEventListener('click', function() {
+  fsNavCloseBtn.addEventListener('click', function () {
     this.parentElement.className = 'fsnav';
   });
 });
