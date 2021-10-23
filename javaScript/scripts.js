@@ -68,7 +68,6 @@ const featuredSpeakers = [
 function createFeaturedspeaker() {
   featuredSpeakers.forEach((featuredSpeaker) => {
     const featuredSpeakerDiv = document.createElement('div');
-    featuredSpeakerDiv.className = 'featured-speaker-content';
     const featuredSpeakerCardDiv = document.createElement('div');
     featuredSpeakerCardDiv.className = 'featured-speaker-card';
     const featuredSpeakerImg = document.createElement('div');

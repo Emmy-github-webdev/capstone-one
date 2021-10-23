@@ -68,7 +68,7 @@ header {
 
 .navigation-content-info {
   display: flex;
-  padding: 5px 20px 10px 62vw;
+  padding: 1vh 7vw 1vh 62vw;
 }
 
 .navigation-content-info li {
@@ -156,7 +156,7 @@ header {
 
 .welcome-content .greeting-paragraph {
   color: #f00;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: normal;
   margin-top: 7vh;
 }
@@ -193,9 +193,9 @@ header {
 
 /* main program section */
 .program {
-  background-color: #000;
+  background-color: #272A31;
   opacity: 1;
-  background-image: linear-gradient(135deg, #0e0e10 25%, transparent 25%), linear-gradient(225deg, #0e0e10 25%, transparent 25%), linear-gradient(45deg, #0e0e10 25%, transparent 25%), linear-gradient(315deg, #0e0e10 25%, #000 25%);
+  background-image: linear-gradient(135deg, #272A33 25%, transparent 25%), linear-gradient(225deg, #272A33 25%, transparent 25%), linear-gradient(45deg, #272A33 25%, transparent 25%), linear-gradient(315deg, #272A33 25%, #1a1a1a 25%);
   background-position: 12px 0, 12px 0, 0 0, 0 0;
   background-size: 12px 12px;
   background-repeat: repeat;
@@ -231,9 +231,13 @@ header {
   gap: 2px;
   align-items: center;
   margin-bottom: 4vh;
-  height: auto;
+  height: 45vh;
   opacity: 0.6;
-  background: #3c3f46;
+  background: #2f3137;
+}
+
+.program-content-card:hover {
+  border: 1px solid #fff;
 }
 
 .program-content-image img {
@@ -244,12 +248,13 @@ header {
 
 .program-content-title h4 {
   color: #f00;
-  font-size: 13px;
-  margin: 1.5px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 4px;
 }
 
 .program-content-info p {
-  font-size: 15px;
+  font-size: 16px;
   align-self: center;
   color: #fff;
 }
@@ -315,10 +320,11 @@ header {
 }
 
 .featured-speaker-info h6 {
-  font-size: 15px;
+  font-size: 19.3px;
   font-weight: bold;
   text-align: left;
   margin-top: 0.5vh;
+  color: #4d4d4d;
 }
 
 .featured-speaker-title {
@@ -356,7 +362,7 @@ header {
 /* About welcome page */
 .welcome-content .greeting-paragraph-about {
   color: #f00;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: normal;
   text-align: center;
   margin-bottom: 3vh;
@@ -520,7 +526,7 @@ header {
 }
 
 .footer-partner-list img {
-  width: 70%;
+  width: 50%;
 }
 
 .footer-foot {
@@ -707,13 +713,13 @@ header {
   }
 
   .program-content-title h4 {
-    font-size: 13px;
+    font-size: 17px;
     margin-top: -4vh;
     text-align: center;
   }
 
   .program-content-info p {
-    font-size: 10px;
+    font-size: 15px;
     padding: 2.5px;
     text-align: center;
   }

@@ -52,3 +52,7 @@ Feel free to check the [issues page](https://github.com/Emmy-github-webdev/capst
 
 Give a :star: if you like this project!
 
+# Acknowledgments
+
+Hat tip to [Cindy Shin](https://www.behance.net/adagio07) the [author of the original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+
