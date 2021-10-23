@@ -193,9 +193,9 @@ header {
 
 /* main program section */
 .program {
-  background-color: #272A31;
+  background-color: #272a31;
   opacity: 1;
-  background-image: linear-gradient(135deg, #272A33 25%, transparent 25%), linear-gradient(225deg, #272A33 25%, transparent 25%), linear-gradient(45deg, #272A33 25%, transparent 25%), linear-gradient(315deg, #272A33 25%, #1a1a1a 25%);
+  background-image: linear-gradient(135deg, #272a33 25%, transparent 25%), linear-gradient(225deg, #272a33 25%, transparent 25%), linear-gradient(45deg, #272a33 25%, transparent 25%), linear-gradient(315deg, #272a33 25%, #1a1a1a 25%);
   background-position: 12px 0, 12px 0, 0 0, 0 0;
   background-size: 12px 12px;
   background-repeat: repeat;
