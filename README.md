@@ -5,6 +5,10 @@ Capstone is a project build using HTML, CSS, Flexbox, and Javascript!
 
 If you like what you see and have a project you need coded, don't hesitate to contact me.
 
+# Responsiveness
+
+![Capstone Responsiveness](images/capstone-image.PNG)
+
 # Built With
 
 
