@@ -17,6 +17,10 @@ If you like what you see and have a project you need coded, don't hesitate to co
 
 [Live Demo Link](https://github.com/Emmy-github-webdev/capstone-one).
 
+# Video Presentation
+
+[Video](https://www.loom.com/share/3ee39a5466dc43c9b73ce0a3cf75c549).
+
 # Getting Started
 
 
