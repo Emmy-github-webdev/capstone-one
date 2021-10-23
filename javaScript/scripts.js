@@ -34,7 +34,7 @@ const featuredSpeakers = [
 
   {
     id: 3,
-    speakerImage: './images/subhashish.jpg',
+    speakerImage: 'images/subhashish.jpg',
     speakerName: 'James Oche',
     speakerTitle: 'President, Nigeria SME Forum',
     speakerDetail: 'James Oche is the President, Nigeria SME forum Nigeria.',
