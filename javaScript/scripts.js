@@ -42,7 +42,7 @@ const featuredSpeakers = [
 
   {
     id: 4,
-    speakerImage: '../images/sunil.jpg',
+    speakerImage: 'images/sunil.jpg',
     speakerName: 'Visagan Subburayalu',
     speakerTitle: 'Director of Technology Target',
     speakerDetail: '  Visagan Subburayalu is the Director of Technology Target limited.',
@@ -50,7 +50,7 @@ const featuredSpeakers = [
 
   {
     id: 5,
-    speakerImage: '../images/udbhav.jpg',
+    speakerImage: 'images/udbhav.jpg',
     speakerName: 'Dr Suleman Lamido',
     speakerTitle: ' Kaduna state commissioner for communication',
     speakerDetail: 'Dr Suleman Lamido is the commissioner for communication of Kaduna state.',
@@ -58,7 +58,7 @@ const featuredSpeakers = [
 
   {
     id: 6,
-    speakerImage: '../images/attahiru.jpeg',
+    speakerImage: 'images/attahiru.jpeg',
     speakerName: 'MJ Attahiru Sule',
     speakerTitle: 'Major General of Nigerian Army',
     speakerDetail: 'MJ Attahiru Sule is the Cheif of Defence Staff of Nigeria.',
